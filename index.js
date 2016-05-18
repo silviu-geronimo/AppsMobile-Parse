@@ -27,7 +27,7 @@ var api = new ParseServer({
       apiKey: process.env.ANDROID_API_KEY || 'andApiKey' // The Server API Key of GCM
     },
     ios: {
-      pdx: 'certs/pushcert.p12', // the path and filename to the .p12 file you exported earlier.
+      pfx: 'certs/pushcert.p12', // the path and filename to the .p12 file you exported earlier.
       bundleId: process.env.BUNDLE_ID || 'bundleId', // The bundle identifier associated with your app
       production: false
     }
